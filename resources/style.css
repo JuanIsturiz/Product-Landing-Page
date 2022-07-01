@@ -55,6 +55,11 @@ a {
 }
 
 /* header stuff */
+
+#second-header {
+  margin-bottom: 4.5rem;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -65,10 +70,6 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#second-header {
-  margin-bottom: 5.75rem;
 }
 
 #second-header h2 {
@@ -210,7 +211,7 @@ footer {
 /* hover and animations stuff */
 #second-header input[type="submit"],
 button {
-  transition: background-color 1.5s;
+  transition: background-color 1s;
 }
 
 #second-header input[type="submit"]:hover,
@@ -224,6 +225,20 @@ button {
   html {
     font-size: 10px;
   }
+  
+  #second-header {
+    margin-bottom: 3.5rem;
+  }
+  
+  #second-header input[type="submit"] {
+    padding: 10rem;
+    font-size: 1.25rem;
+    width: 11.25rem;
+  }
+
+  #features {
+    width: 85%;
+  }
 
   .previous-nav {
     padding: 0 0.5rem;
@@ -236,4 +251,13 @@ button {
   .previous-nav img {
     width: 42.5%;
   }
+
+  .price-container {
+    width: 25rem;
+  }
+  
+  footer {
+    width: 90%;
+  }
+
 }
