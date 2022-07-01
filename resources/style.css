@@ -1,0 +1,239 @@
+/* global variables */
+:root {
+  --button-color: #f1c40f;
+}
+/* imported font family */
+@font-face {
+  font-family: "Lato";
+  src: url("./Fonts/Lato-Regular.ttf") format("truetype");
+}
+
+/* global stuff */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+/* navbar stuff */
+.previous-nav {
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.75rem;
+  z-index: 1;
+  padding: 0 2.75rem;
+}
+
+.previous-nav img {
+  width: 25%;
+}
+
+.previous-nav ul {
+  display: flex;
+  gap: 5.5rem;
+  padding: 0 2rem;
+  list-style: none;
+}
+
+main {
+  margin-top: 5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* header stuff */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#second-header {
+  margin-bottom: 5.75rem;
+}
+
+#second-header h2 {
+  margin-bottom: 1.25rem;
+}
+
+#second-header input[type="email"] {
+  width: 17rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+}
+
+#second-header input[type="submit"] {
+  background-color: var(--button-color);
+  font-size: 1rem;
+  font-weight: 1000;
+  width: 9rem;
+  padding: 0.25rem;
+  border: none;
+  border-radius: 0.1rem;
+}
+/* features section stuff */
+#features {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 4rem;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature i {
+  color: darkorange;
+  font-size: 3rem;
+}
+
+/* video section stuff */
+#how-it-works {
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.video-container {
+  margin: 0 auto;
+  width: 35rem;
+  height: 20rem;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* prices section stuff */
+#prices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 2.5rem auto;
+}
+
+.price-container {
+  width: 19.5rem;
+  text-align: center;
+  border: black 1px solid;
+  padding-bottom: 1rem;
+}
+
+.type {
+  font-weight: 600;
+  background-color: #ddd;
+  padding: 0.85rem 0;
+}
+
+.price {
+  margin: 1rem auto 1.25rem auto;
+}
+
+.info p {
+  margin: 0.5rem auto;
+}
+
+.info {
+  margin-bottom: 2rem;
+}
+
+.price-container button {
+  color: black;
+  font-size: 1rem;
+  background-color: var(--button-color);
+  border: none;
+  padding: 0.65em 1.25rem;
+  border-radius: 0.1rem;
+}
+
+/* footer stuff */
+footer {
+  width: 75%;
+  padding: 1.5rem;
+  margin: 0 auto;
+  background-color: #ddd;
+  display: flex;
+  justify-content: right;
+  border-radius: 0.1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* hover and animations stuff */
+#second-header input[type="submit"],
+button {
+  transition: background-color 1.5s;
+}
+
+#second-header input[type="submit"]:hover,
+.price-container button:hover {
+  cursor: pointer;
+  background-color: #f1970f;
+}
+
+/* @media for phones stuff */
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+
+  .previous-nav {
+    padding: 0 0.5rem;
+  }
+
+  .previous-nav ul {
+    gap: 2rem;
+  }
+
+  .previous-nav img {
+    width: 42.5%;
+  }
+}
